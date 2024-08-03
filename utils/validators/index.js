@@ -16,11 +16,7 @@ const validateCpfCnpj = (chunck) => {
 
 
 export const validators = (chunck) => {
-  if(!validateCpfCnpj(chunck)) {
-    throw new Error(`Campo [nrCpfCnpj] invalido - ${chunck.nrCpfCnpj}`)
-  }
-
-  if(!VlPrestValidator(chunck)) {
-    throw new Error('VlPrest nao confere com o calculo [VlTotal / qtPrestacoes]')
+  if(!validateCpfCnpj(chunck) ||!VlPrestValidator(chunck)) {
+    return chunck
   }
 }
