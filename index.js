@@ -4,7 +4,7 @@ import csv from 'csv-parser'
 import { validators } from './utils/validators/index.js'
 import { transformToCurrency } from './utils/transformers/transform_to_currency.js'
 
-const readableStream = fs.createReadStream('small.csv')
+const readableStream = fs.createReadStream('data.csv')
 const writableStream = fs.createWriteStream('errors.json')
 
 const parseFile = csv()
