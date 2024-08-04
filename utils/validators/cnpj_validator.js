@@ -33,7 +33,6 @@ const validCalc = (x, numbers) => {
   return result > 9 ? 0 : result
 }
 
-// Elimina tudo que não é dígito
 const matchNumbers = (value) => {
   const match = value.toString().match(/\d/g)
   return Array.isArray(match) ? match.map(Number) : []

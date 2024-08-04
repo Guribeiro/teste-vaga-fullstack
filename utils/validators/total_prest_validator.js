@@ -1,4 +1,4 @@
-export const VlPrestValidator = (chunck) => {
+export const vlPrestValidator = (chunck) => {
   const { vlTotal, qtPrestacoes, vlPresta } = chunck
 
   const vlTotalAsNumber = Number(vlTotal)
