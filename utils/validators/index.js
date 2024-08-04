@@ -21,6 +21,6 @@ export const validators = (chunck) => {
   }
 
   if(!vlPrestValidator(chunck)) {
-    return new Error('VlPrest nao confere com o calculo [VlTotal / qtPrestacoes]')
+    return new Error('vlPrest nao confere com o calculo [VlTotal / qtPrestacoes]')
   }
 }
